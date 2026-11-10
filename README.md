@@ -40,6 +40,8 @@ configs:
 
 # US Telehealth Hormone Optimization (Women's Bioidentical HRT, Men's TRT & Oral Enclomiphene) Price Dataset — November 2026
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24118649.svg)](https://doi.org/10.5281/zenodo.24118649) **Official Academic DOI:** [10.5281/zenodo.24118649](https://doi.org/10.5281/zenodo.24118649) · **Kaggle Mirror:** [https://www.kaggle.com/datasets/contentx10/telehealth-hormone-hrt-trt-pricing-2026](https://www.kaggle.com/datasets/contentx10/telehealth-hormone-hrt-trt-pricing-2026) · **GitHub Mirror:** [https://github.com/jcburrows-alt/telehealth-hormone-hrt-trt-pricing-2026](https://github.com/jcburrows-alt/telehealth-hormone-hrt-trt-pricing-2026)
+
 An open-access, machine-readable health economics dataset (**96 verified plan rows across 24 US telehealth providers and hormone clinic benchmarks**) auditing monthly medication prices, mandatory platform membership fees, diagnostic blood-panel surcharges, and 12-month cumulative costs across three endocrine verticals as of **November 10, 2026**:
 
 1. **`womens_bioidentical_hrt` (`subsets/womens-bioidentical-hrt.csv` — 48 Rows):** Perimenopause and menopause Bioidentical Hormone Replacement Therapy (`17β-Estradiol` [`Q422462`](https://www.wikidata.org/wiki/Q422462), `Micronized Progesterone` [`Q422466`](https://www.wikidata.org/wiki/Q422466), and `Bi-Est 80/20`) across oral tablets, transdermal patches/gels, and subdermal pellet clinic benchmarks.
