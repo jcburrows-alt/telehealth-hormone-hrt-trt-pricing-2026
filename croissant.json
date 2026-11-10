@@ -1,0 +1,403 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "http://purl.org/dc/terms/conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "US Telehealth Hormone Optimization (Women's Bioidentical HRT, Men's TRT & Oral Enclomiphene) Price Dataset \u2014 November 2026",
+  "description": "Normalized 96-row multi-config dataset across 24 US telehealth platforms and hormone clinic benchmarks auditing monthly membership fees, lab panel surcharges, maintenance monthly prices, and 12-month total costs for Women's Bioidentical HRT (48 rows), Men's Injectable/Topical TRT (28 rows), and Oral Enclomiphene Citrate (20 rows) as of November 10, 2026.",
+  "url": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/",
+  "sameAs": [
+    "https://huggingface.co/datasets/get-skinny-online/telehealth-hormone-hrt-trt-pricing-2026",
+    "https://getskinnyonline.com/blog/2026-telehealth-hrt-testosterone-enclomiphene-pricing-report",
+    "https://getskinnyonline.com/hrt",
+    "https://getskinnyonline.com/hrt/cost-without-insurance",
+    "https://getskinnyonline.com/testosterone",
+    "https://getskinnyonline.com/pricing",
+    "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/",
+    "https://github.com/jcburrows-alt/telehealth-hormone-hrt-trt-pricing-2026"
+  ],
+  "version": "2026.11.1",
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "citeAs": "Get Skinny Online Health Economics Research Group (2026). US Telehealth Hormone Optimization (Women's Bioidentical HRT, Men's TRT & Oral Enclomiphene) Price Dataset \u2014 November 2026 (v2026.11.1). https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "Get Skinny Online Health Economics Research Group",
+    "url": "https://getskinnyonline.com"
+  },
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "pricing.csv",
+      "name": "pricing.csv",
+      "description": "Master 96-row CSV table of US telehealth women's HRT, men's TRT, and oral enclomiphene plans.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/pricing.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "31396 B",
+      "sha256": "18be8ea4e4746eab0d525e0424b12fec3a28101c14ba5b79277f0073faf8ee3c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "subsets/womens-bioidentical-hrt.csv",
+      "name": "womens-bioidentical-hrt.csv",
+      "description": "48-row subset auditing Women's Bioidentical HRT (Estradiol patches/gels/tablets & Micronized Progesterone) across 18 providers.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/subsets/womens-bioidentical-hrt.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "16396 B",
+      "sha256": "965992d503ed887e56b205f607cf779768f37e2074b266b2561cf4d2e9a2bdcf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "subsets/mens-trt-injectable-topical.csv",
+      "name": "mens-trt-injectable-topical.csv",
+      "description": "28-row subset auditing Men's Injectable Testosterone Cypionate and Topical TRT across 16 providers.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/subsets/mens-trt-injectable-topical.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "9437 B",
+      "sha256": "3793c843b6410dfd64ca00522d3c83e57f0ceb7ce3965610e1164f6f634231f9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "subsets/enclomiphene-oral.csv",
+      "name": "enclomiphene-oral.csv",
+      "description": "20-row subset auditing Oral Enclomiphene Citrate fertility-preserving testosterone monotherapy across 14 providers.",
+      "contentUrl": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/subsets/enclomiphene-oral.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "6371 B",
+      "sha256": "76a0c0d3fe07b8da08547f636b97de0b5cc36ad123268be5b453bbb6657f2486"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "hormone_hrt_trt_pricing_records",
+      "name": "hormone_hrt_trt_pricing_records",
+      "description": "96 verified hormone optimization pricing records across 24 US telehealth providers and brick-and-mortar pellet/TRT clinics.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/provider",
+          "name": "provider",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "provider"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/plan_name",
+          "name": "plan_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "plan_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/medication_type",
+          "name": "medication_type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "medication_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/medication_name",
+          "name": "medication_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "medication_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/membership_fee_monthly_usd",
+          "name": "membership_fee_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "membership_fee_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/medication_cost_monthly_usd",
+          "name": "medication_cost_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "medication_cost_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/total_effective_monthly_usd",
+          "name": "total_effective_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "total_effective_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/starter_monthly_usd",
+          "name": "starter_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "starter_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/maintenance_max_dose_monthly_usd",
+          "name": "maintenance_max_dose_monthly_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "maintenance_max_dose_monthly_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/estimated_12_month_total_usd",
+          "name": "estimated_12_month_total_usd",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "estimated_12_month_total_usd"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/dose_escalation_surcharge",
+          "name": "dose_escalation_surcharge",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "dose_escalation_surcharge"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/plan_length_months",
+          "name": "plan_length_months",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "plan_length_months"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/states_served",
+          "name": "states_served",
+          "dataType": "cr:Int64",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "states_served"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/pharmacy_named_publicly",
+          "name": "pharmacy_named_publicly",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "pharmacy_named_publicly"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/legitscript_certified",
+          "name": "legitscript_certified",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "legitscript_certified"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/fda_approved_medication",
+          "name": "fda_approved_medication",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "fda_approved_medication"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/insurance_accepted",
+          "name": "insurance_accepted",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "insurance_accepted"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/pricing_notes",
+          "name": "pricing_notes",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "pricing_notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/source_url",
+          "name": "source_url",
+          "dataType": "sc:URL",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "source_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "hormone_hrt_trt_pricing_records/date_collected",
+          "name": "date_collected",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "pricing.csv"
+            },
+            "extract": {
+              "column": "date_collected"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

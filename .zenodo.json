@@ -1,0 +1,45 @@
+{
+  "upload_type": "dataset",
+  "title": "2026 US Telehealth Hormone Therapy Price Index (Women's Bioidentical HRT, Men's TRT & Oral Enclomiphene)",
+  "creators": [
+    {
+      "name": "Get Skinny Online Health Economics Research Desk",
+      "affiliation": "Get Skinny Online LLC"
+    }
+  ],
+  "description": "<p>Open CC-BY-4.0 dataset auditing 96 cash-pay hormone optimization plans across 24 US menopause, TRT, and endocrine telehealth platforms.</p><p>Canonical Repository: <a href='https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/'>https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/</a> | Statistical Report: <a href='https://getskinnyonline.com/blog/2026-telehealth-hrt-testosterone-enclomiphene-pricing-report'>https://getskinnyonline.com/blog/2026-telehealth-hrt-testosterone-enclomiphene-pricing-report</a> | Hugging Face Parquet: <a href='https://huggingface.co/datasets/get-skinny-online/telehealth-hormone-hrt-trt-pricing-2026'>https://huggingface.co/datasets/get-skinny-online/telehealth-hormone-hrt-trt-pricing-2026</a></p>",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "hormone-therapy",
+    "hrt",
+    "menopause",
+    "testosterone",
+    "enclomiphene",
+    "telehealth",
+    "health-economics",
+    "open-data"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/get-skinny-online/telehealth-hormone-hrt-trt-pricing-2026",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/jcburrows-alt/telehealth-hormone-hrt-trt-pricing-2026",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://getskinnyonline.com/blog/2026-telehealth-hrt-testosterone-enclomiphene-pricing-report",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}

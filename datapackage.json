@@ -1,0 +1,34 @@
+{
+  "profile": "tabular-data-package",
+  "name": "telehealth-hormone-hrt-trt-pricing-2026",
+  "title": "2026 US Telehealth Hormone Therapy Price Index (Women's Bioidentical HRT, Men's TRT & Oral Enclomiphene)",
+  "description": "Open CC-BY-4.0 dataset auditing 96 cash-pay hormone optimization plans across 24 US menopause, TRT, and endocrine telehealth platforms.",
+  "homepage": "https://getskinnyonline.com/datasets/telehealth-hormone-hrt-trt-pricing-2026/",
+  "version": "2026.11.1",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Get Skinny Online Health Economics & Editorial Research Desk",
+      "role": "author",
+      "path": "https://getskinnyonline.com"
+    }
+  ],
+  "resources": [
+    {
+      "name": "pricing",
+      "path": "pricing.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 31396,
+      "hash": "sha256:18be8ea4e4746eab0d525e0424b12fec3a28101c14ba5b79277f0073faf8ee3c"
+    }
+  ]
+}
